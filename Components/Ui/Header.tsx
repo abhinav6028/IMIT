@@ -23,8 +23,6 @@ export default function Header() {
     ]
 
 
-    const filterdPath = navItems.filter((data, index) => pathname === data.path)
-
     const [scrolling, setScrolling] = React.useState(false);
 
     React.useEffect(() => {
@@ -79,7 +77,7 @@ export default function Header() {
                                     // bgcolor: pathname == data.path ? 'red' : 'green',
                                     cursor: 'pointer'
                                 }}>
-                                <H5 pathname={pathname} data={data}>
+                                <H5>
                                     {data.name}
                                 </H5>
 
